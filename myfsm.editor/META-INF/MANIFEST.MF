@@ -15,5 +15,10 @@ Require-Bundle: org.eclipse.core.runtime,
  myfsm.edit;visibility:=reexport,
  org.eclipse.emf.ecore.xmi;visibility:=reexport,
  org.eclipse.emf.edit.ui;visibility:=reexport,
- org.eclipse.ui.ide;visibility:=reexport
+ org.eclipse.ui.ide;visibility:=reexport,
+ myfsm_rascal;bundle-version="1.0.0",
+ rascal_ecore;bundle-version="1.0.0",
+ rascal_eclipse;bundle-version="0.8.4",
+ org.eclipse.emf.common,
+ org.eclipse.core.commands
 Bundle-ActivationPolicy: lazy
