@@ -11,6 +11,7 @@ syntax State
   = "state" Id name Trans* transitions "end"
   ;
   
+  
 syntax Trans
   = @ref{target:State:/states[id=_]} "on" Id event "=\>" Id target 
   ;

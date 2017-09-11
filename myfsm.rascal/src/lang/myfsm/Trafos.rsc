@@ -5,10 +5,13 @@ import lang::ecore::Refs;
 import lang::ecore::Diff;
 
 import List;
+import IO;
 
 Patch runAddState((&T<:node)(type[&T<:node]) getIt) {
   Machine m = getIt(#Machine);
-  return diff(#Machine, m, addState(m));
+  Patch patch = diff(#Machine, m, addState(m));
+  iprintln(patch);
+  return patch;
 } 
 
 
