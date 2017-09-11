@@ -34,4 +34,13 @@
       </editor>
    </extension>
 
+   <extension point="org.eclipse.ui.popupMenus">
+      <objectContribution id="myfsm.editor.RunTrafoAction" objectClass="model.Machine">
+         <action class="model.menu.AddStateTrafo" enablesFor="1"
+            id="model.menu.AddStateTrafoId" label="Add State"
+            menubarPath="additions">
+         </action>
+      </objectContribution>
+   </extension>
+
 </plugin>

@@ -8,7 +8,8 @@ Bundle-Activator: model.presentation.ModelEditorPlugin$Implementation
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
-Export-Package: model.presentation
+Export-Package: model.menu,
+ model.presentation
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.core.resources;visibility:=reexport,
  myfsm.edit;visibility:=reexport,
