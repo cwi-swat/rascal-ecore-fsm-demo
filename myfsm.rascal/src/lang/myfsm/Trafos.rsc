@@ -7,7 +7,7 @@ import lang::ecore::Diff;
 import List;
 import IO;
 
-Patch runAddState(Loader[&T<:node] load) {
+Patch runAddState(Loader[&T] load) {
   Machine m = load(#Machine);
   Patch patch = diff(#Machine, m, addState(m));
   iprintln(patch);

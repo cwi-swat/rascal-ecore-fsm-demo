@@ -4,7 +4,8 @@ extend lang::std::Layout;
 extend lang::std::Id;
 
 start syntax Machine
-  = "machine" Id name State* states "end"
+  = @ref{initial:State:/states[id=_]} 
+  "machine" Id name "init" Id initial State* states "end"
   ;
   
 syntax State

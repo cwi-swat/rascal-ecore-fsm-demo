@@ -3,7 +3,7 @@ module lang::myfsm::MetaModel
 import lang::ecore::Refs;
 
 data Machine(Id uid = noId(), loc src = noLoc())
-  = Machine(str name, list[State] states);
+  = Machine(str name, list[State] states, Ref[State] initial = null());
   
 data State(Id uid = noId(), loc src = noLoc())
   = State(str name, list[Trans] transitions);
