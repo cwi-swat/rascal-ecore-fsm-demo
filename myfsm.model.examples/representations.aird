@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:myfsm="http://www.example.org/myfsm" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis xmi:id="_K3QBoJcgEee5tIzTy7SUmg" selectedViews="_rqBUIJcgEee5tIzTy7SUmg" version="12.0.0.201704271200">
+    <semanticResources>Simple.myfsm</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" xmi:id="_rqBUIJcgEee5tIzTy7SUmg">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/myfsm.model.design/description/model.odesign#//@ownedViewpoints[name='MyFsm%20Viewpoint']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_tIO-kJcgEee5tIzTy7SUmg" name="MyFsmDiagram" repPath="#_tIOXgJcgEee5tIzTy7SUmg">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/myfsm.model.design/description/model.odesign#//@ownedViewpoints[name='MyFsm%20Viewpoint']/@ownedRepresentations[name='Fsm%20Diagram']"/>
+        <target xmi:type="myfsm:Machine" href="Simple.myfsm#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram xmi:id="_tIOXgJcgEee5tIzTy7SUmg" name="MyFsmDiagram">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_tIOXgZcgEee5tIzTy7SUmg" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_tIOXgpcgEee5tIzTy7SUmg"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_tIYIgJcgEee5tIzTy7SUmg" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_tIYIgZcgEee5tIzTy7SUmg" type="Sirius" element="_tIOXgJcgEee5tIzTy7SUmg" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_tIYIg5cgEee5tIzTy7SUmg" type="2001" element="_tIOXhJcgEee5tIzTy7SUmg">
+          <children xmi:type="notation:Node" xmi:id="_tIYvkJcgEee5tIzTy7SUmg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_tIYvkZcgEee5tIzTy7SUmg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_tIakwpcgEee5tIzTy7SUmg" type="3016" element="_tIOXhZcgEee5tIzTy7SUmg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_tIakw5cgEee5tIzTy7SUmg" fontName="Cantarell"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tIakxJcgEee5tIzTy7SUmg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_tIYIhJcgEee5tIzTy7SUmg" fontName="Cantarell" fontHeight="18"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tIYIhZcgEee5tIzTy7SUmg" x="132" y="108" width="100" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_tIZWoJcgEee5tIzTy7SUmg" type="2001" element="_tIOXhpcgEee5tIzTy7SUmg">
+          <children xmi:type="notation:Node" xmi:id="_tIZ9sJcgEee5tIzTy7SUmg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_tIZ9sZcgEee5tIzTy7SUmg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_tIakxZcgEee5tIzTy7SUmg" type="3016" element="_tIOXh5cgEee5tIzTy7SUmg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_tIakxpcgEee5tIzTy7SUmg" fontName="Cantarell"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tIakx5cgEee5tIzTy7SUmg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_tIZWoZcgEee5tIzTy7SUmg" fontName="Cantarell" fontHeight="18"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tIZWopcgEee5tIzTy7SUmg" width="100" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_tIZ9spcgEee5tIzTy7SUmg" type="2001" element="_tIOXiJcgEee5tIzTy7SUmg">
+          <children xmi:type="notation:Node" xmi:id="_tIakwJcgEee5tIzTy7SUmg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_tIakwZcgEee5tIzTy7SUmg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_tIbL0JcgEee5tIzTy7SUmg" type="3017" element="_tIOXiZcgEee5tIzTy7SUmg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_tIbL0ZcgEee5tIzTy7SUmg" fontName="Cantarell"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tIbL0pcgEee5tIzTy7SUmg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_tIZ9s5cgEee5tIzTy7SUmg" fontName="Cantarell" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tIZ9tJcgEee5tIzTy7SUmg" x="156" y="12" width="100" height="50"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_tIYIgpcgEee5tIzTy7SUmg"/>
+        <edges xmi:type="notation:Edge" xmi:id="_tIbL05cgEee5tIzTy7SUmg" type="4001" element="_tIOXipcgEee5tIzTy7SUmg" source="_tIYIg5cgEee5tIzTy7SUmg" target="_tIZ9spcgEee5tIzTy7SUmg">
+          <children xmi:type="notation:Node" xmi:id="_tIby4JcgEee5tIzTy7SUmg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tIby4ZcgEee5tIzTy7SUmg" x="-5" y="-9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_tIby4pcgEee5tIzTy7SUmg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tIby45cgEee5tIzTy7SUmg" x="5" y="8"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_tIby5JcgEee5tIzTy7SUmg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tIby5ZcgEee5tIzTy7SUmg" x="5" y="9"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_tIbL1JcgEee5tIzTy7SUmg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_tIbL1ZcgEee5tIzTy7SUmg" fontName="Cantarell" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_tIbL1pcgEee5tIzTy7SUmg" points="[0, 0, -24, 46]$[24, -46, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_tIcZ8JcgEee5tIzTy7SUmg" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_tIcZ8ZcgEee5tIzTy7SUmg" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_zQjnsJcgEee5tIzTy7SUmg" type="4001" element="_zQf9UJcgEee5tIzTy7SUmg" source="_tIZ9spcgEee5tIzTy7SUmg" target="_tIZWoJcgEee5tIzTy7SUmg">
+          <children xmi:type="notation:Node" xmi:id="_zQlc4JcgEee5tIzTy7SUmg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zQlc4ZcgEee5tIzTy7SUmg" x="-1" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_zQmD8JcgEee5tIzTy7SUmg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zQmD8ZcgEee5tIzTy7SUmg" x="2" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_zQmD8pcgEee5tIzTy7SUmg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zQmD85cgEee5tIzTy7SUmg" x="1" y="11"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_zQjnsZcgEee5tIzTy7SUmg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_zQjnspcgEee5tIzTy7SUmg" fontName="Cantarell" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zQjns5cgEee5tIzTy7SUmg" points="[-50, -6, 106, 6]$[-106, -12, 50, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zQmrAJcgEee5tIzTy7SUmg" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zQmrAZcgEee5tIzTy7SUmg" id="(0.5,0.5)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_tIOXhJcgEee5tIzTy7SUmg" name="S1" outgoingEdges="_tIOXipcgEee5tIzTy7SUmg" width="10" height="5" resizeKind="NSEW">
+      <target xmi:type="myfsm:State" href="Simple.myfsm#S1"/>
+      <semanticElements xmi:type="myfsm:State" href="Simple.myfsm#S1"/>
+      <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_tIOXhZcgEee5tIzTy7SUmg" labelSize="18" labelPosition="node" horizontalDiameter="10" verticalDiameter="5" color="194,239,255">
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/myfsm.model.design/description/model.odesign#//@ownedViewpoints[name='MyFsm%20Viewpoint']/@ownedRepresentations[name='Fsm%20Diagram']/@defaultLayer/@nodeMappings[name='State%20Node']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/myfsm.model.design/description/model.odesign#//@ownedViewpoints[name='MyFsm%20Viewpoint']/@ownedRepresentations[name='Fsm%20Diagram']/@defaultLayer/@nodeMappings[name='State%20Node']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_tIOXhpcgEee5tIzTy7SUmg" name="S2" incomingEdges="_zQf9UJcgEee5tIzTy7SUmg" width="10" height="5" resizeKind="NSEW">
+      <target xmi:type="myfsm:State" href="Simple.myfsm#S2"/>
+      <semanticElements xmi:type="myfsm:State" href="Simple.myfsm#S2"/>
+      <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_tIOXh5cgEee5tIzTy7SUmg" labelSize="18" labelPosition="node" horizontalDiameter="10" verticalDiameter="5" color="194,239,255">
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/myfsm.model.design/description/model.odesign#//@ownedViewpoints[name='MyFsm%20Viewpoint']/@ownedRepresentations[name='Fsm%20Diagram']/@defaultLayer/@nodeMappings[name='State%20Node']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/myfsm.model.design/description/model.odesign#//@ownedViewpoints[name='MyFsm%20Viewpoint']/@ownedRepresentations[name='Fsm%20Diagram']/@defaultLayer/@nodeMappings[name='State%20Node']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_tIOXiJcgEee5tIzTy7SUmg" name="a" outgoingEdges="_zQf9UJcgEee5tIzTy7SUmg" incomingEdges="_tIOXipcgEee5tIzTy7SUmg" width="10" height="5" resizeKind="NSEW">
+      <target xmi:type="myfsm:Trans" href="Simple.myfsm#//@states.0/@transitions.0"/>
+      <semanticElements xmi:type="myfsm:Trans" href="Simple.myfsm#//@states.0/@transitions.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Lozenge" xmi:id="_tIOXiZcgEee5tIzTy7SUmg" labelSize="12" labelPosition="node" width="10" height="5" color="255,245,181">
+        <description xmi:type="style:LozengeNodeDescription" href="platform:/resource/myfsm.model.design/description/model.odesign#//@ownedViewpoints[name='MyFsm%20Viewpoint']/@ownedRepresentations[name='Fsm%20Diagram']/@defaultLayer/@nodeMappings[name='Trans%20Node']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/myfsm.model.design/description/model.odesign#//@ownedViewpoints[name='MyFsm%20Viewpoint']/@ownedRepresentations[name='Fsm%20Diagram']/@defaultLayer/@nodeMappings[name='Trans%20Node']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_tIOXipcgEee5tIzTy7SUmg" sourceNode="_tIOXhJcgEee5tIzTy7SUmg" targetNode="_tIOXiJcgEee5tIzTy7SUmg">
+      <target xmi:type="myfsm:State" href="Simple.myfsm#S1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_tIOXi5cgEee5tIzTy7SUmg" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/myfsm.model.design/description/model.odesign#//@ownedViewpoints[name='MyFsm%20Viewpoint']/@ownedRepresentations[name='Fsm%20Diagram']/@defaultLayer/@edgeMappings[name='NodeToTrans']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_tIOXjJcgEee5tIzTy7SUmg"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/myfsm.model.design/description/model.odesign#//@ownedViewpoints[name='MyFsm%20Viewpoint']/@ownedRepresentations[name='Fsm%20Diagram']/@defaultLayer/@edgeMappings[name='NodeToTrans']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_zQf9UJcgEee5tIzTy7SUmg" sourceNode="_tIOXiJcgEee5tIzTy7SUmg" targetNode="_tIOXhpcgEee5tIzTy7SUmg">
+      <target xmi:type="myfsm:Trans" href="Simple.myfsm#//@states.0/@transitions.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_zQhLcJcgEee5tIzTy7SUmg" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/myfsm.model.design/description/model.odesign#//@ownedViewpoints[name='MyFsm%20Viewpoint']/@ownedRepresentations[name='Fsm%20Diagram']/@defaultLayer/@edgeMappings[name='TransToNode']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_zQhLcZcgEee5tIzTy7SUmg"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/myfsm.model.design/description/model.odesign#//@ownedViewpoints[name='MyFsm%20Viewpoint']/@ownedRepresentations[name='Fsm%20Diagram']/@defaultLayer/@edgeMappings[name='TransToNode']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/myfsm.model.design/description/model.odesign#//@ownedViewpoints[name='MyFsm%20Viewpoint']/@ownedRepresentations[name='Fsm%20Diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_tIOXjZcgEee5tIzTy7SUmg"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/myfsm.model.design/description/model.odesign#//@ownedViewpoints[name='MyFsm%20Viewpoint']/@ownedRepresentations[name='Fsm%20Diagram']/@defaultLayer"/>
+    <target xmi:type="myfsm:Machine" href="Simple.myfsm#/"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>
