@@ -2,7 +2,9 @@ module lang::myfsm::MetaModel
 
 import lang::ecore::Refs;
 
-data Machine(Id uid = noId(), loc src = noLoc())
+// All "meta-adts" need to have uid, might have src, and root models must have pkgURI.
+
+data Machine(Id uid = noId(), loc src = noLoc(), loc pkgURI = |http://www.example.org/myfsm|)
   = Machine(str name, list[State] states, Ref[State] initial = null());
   
 data State(Id uid = noId(), loc src = noLoc())
