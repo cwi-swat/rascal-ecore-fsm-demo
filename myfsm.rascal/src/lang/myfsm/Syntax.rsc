@@ -9,12 +9,13 @@ start syntax Machine
   ;
   
 syntax State
-  = "state" Id name Trans* transitions "end"
+  = @id{"name"} "state" Id name Trans* transitions "end"
   ;
   
   
 syntax Trans
-  = @ref{target:State:/states[name=$target]} "on" Id event "=\>" Id target 
+  = @ref{target:State:/states[name=$target]} 
+  "on" Id event "=\>" Id target 
   ;
   
 Machine example() = (Machine)
@@ -23,9 +24,14 @@ Machine example() = (Machine)
 '
 '  state closed
 '    on open =\> opened
+'    on lock =\> locked
 '  end
 ' 
 '  state opened
 '    on close =\> closed
+'  end
+'  
+'  state locked
+'    on unlock =\> closed
 '  end
 'end`;
