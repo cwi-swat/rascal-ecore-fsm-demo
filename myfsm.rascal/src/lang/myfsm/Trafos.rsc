@@ -17,6 +17,14 @@ Patch runAddState(Loader[&T] load) {
 
 Machine addState(Machine m) {
   r = newRealm();
-  m.states += [r.new(#State, State("NewState_<size(m.states)>", []))];
+  newState = r.new(#State, State("NewState_<size(m.states)>", []));
+  m.states = [m.states[0]] + [m.states[2]];
+  bla = r.new(#State, State("BLA", []));
+  tr = r.new(#Trans, Trans("bar", referTo(#State, newState)));
+  bla.transitions += [tr];
+  m.states += [newState];
+  m.states = [bla] + m.states;
+  m.initial = referTo(#State, newState);
+  m.name = m.name + "_";
   return m;
 }

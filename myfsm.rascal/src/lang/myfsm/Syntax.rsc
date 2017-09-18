@@ -11,12 +11,14 @@ start syntax Machine
 syntax State
   = @id{"name"} "state" Id name Trans* transitions "end"
   ;
-  
-  
+    
 syntax Trans
   = @ref{target:State:/states[name=$target]} 
   "on" Id event "=\>" Id target 
   ;
+
+lexical Id
+  = "\<" Id ":" "Id" "\>";
   
 Machine example() = (Machine)
 `machine Doors
@@ -35,3 +37,5 @@ Machine example() = (Machine)
 '    on unlock =\> closed
 '  end
 'end`;
+
+
