@@ -17,8 +17,9 @@ syntax Trans
   "on" Id event "=\>" Id target 
   ;
 
+
 lexical Id
-  = "\<" Id ":" "Id" "\>";
+  = "\<" Id ":" Id "\>";
   
 Machine example() = (Machine)
 `machine Doors
