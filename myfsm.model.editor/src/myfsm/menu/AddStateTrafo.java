@@ -17,10 +17,9 @@ public class AddStateTrafo implements org.eclipse.ui.IObjectActionDelegate {
 	@Override
 	public void run(IAction action) {
 		if (m != null) {
-			// Get the editing domain
-			EditingDomain editingDomain = AdapterFactoryEditingDomain.getEditingDomainFor(m);
-			Command cmd = lang.ecore.EMFBridge.runRascal("myfsm.model.editor", editingDomain, m, "lang::myfsm::Trafos", "runAddState"); 
-			editingDomain.getCommandStack().execute(cmd);
+			Command cmd = lang.ecore.EMFBridge.runRascal("myfsm.model.editor", 
+					m, "lang::myfsm::Trafos", "runAddState"); 
+			AdapterFactoryEditingDomain.getEditingDomainFor(m).getCommandStack().execute(cmd);
 		}
 	}
 
