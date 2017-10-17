@@ -1,11 +1,11 @@
 module lang::myfsm::IDE
 
 import lang::myfsm::Syntax;
-import lang::ecore::Tree2Model;
-import lang::ecore::PatchTree;
-import lang::ecore::PTDiff;
+import lang::ecore::text::Tree2Model;
+import lang::ecore::text::PatchTree;
+import lang::ecore::text::PTDiff;
 import lang::ecore::IO;
-import lang::ecore::Diff;
+import lang::ecore::diff::Diff;
 import lang::myfsm::MetaModel;
 
 import util::IDE;
@@ -16,9 +16,11 @@ import IO;
 
 
 void main() {
-  map[loc, void(Patch(lang::myfsm::MetaModel::Machine))] modelEditors = ();
   map[loc, void(lang::myfsm::MetaModel::Machine)] observers = ();
+  
+  map[loc, void(Patch)] modelEditors = ();
   map[loc, void(lrel[loc, str])] termEditors = ();
+  
   map[loc, lang::myfsm::MetaModel::Machine] models = ();
   map[loc, lang::myfsm::Syntax::Machine] terms = ();
   
@@ -93,48 +95,42 @@ void main() {
   });
   
   registerContributions("MyFSM", {
-    annotator(lang::myfsm::Syntax::Machine(lang::myfsm::Syntax::Machine input) {
-    
+    builder(set[Message] (lang::myfsm::Syntax::Machine input) {
      
         // save the term
-        println("Saving the term <input@\loc.top>");
-        terms[input@\loc.top] = input;
+        println("Saving the term <myTerm>");
+        terms[myTerm] = input;
         
         
-	    // work relative the modelURI to get XMI correct paths 
-	    modelURI = modelLoc(input@\loc);
-	    
 	    // construct the model corresponding to the source code
 	    println("Tree 2 model");
-	    <model, orgs> = tree2modelWithOrigins(#lang::myfsm::MetaModel::Machine, input, uri=modelURI);
+	    <model, orgs> = tree2modelWithOrigins(#lang::myfsm::MetaModel::Machine, input, uri=myModel);
 	    
 	    // if no change in terms of the model, just return the parse tree    
-	    if (modelURI in models, models[modelURI] == model) {
-	      return input;
+	    if (myModel in models, models[myModel] == model) {
+	      return {};
 	    }
 	    
 		println("Saving the model");
-	    models[modelURI] = model;
+		old = models[myModel];
+	    models[myModel] = model;
 	
 	    // obtain an editor for the model
-	    if (modelURI notin modelEditors) {
-	      modelEditors[modelURI] = editor(#lang::myfsm::MetaModel::Machine, modelURI);
+	    if (myModel notin modelEditors) {
+	      modelEditors[myModel] = modelEditor(myModel);
 	    }
-	    ed = modelEditors[modelURI];
-	
-	    println("patching the model");
-	    // patch the model editor according to the different between what's currently in there
-	    // and the just acquired model from the source code.    
-	    ed(Patch(lang::myfsm::MetaModel::Machine current) {
-	      // don't patch if there was a parse error.
-	      Patch p = diff(#lang::myfsm::MetaModel::Machine, current, models[modelURI]);
-	      println("PATCH: ");
-	      iprintln(p);
-	      return p; 
-	    });
 	    
-	    println("Returning parse tree");
-	    return input;
+	    Patch p = diff(#lang::myfsm::MetaModel::Machine, old, models[myModel]);
+	    println("PATCH: ");
+	    iprintln(p);
+	      
+	    println("patching the model");
+	    ed = modelEditors[myModel];
+ 		ed(p);	    
+	    
+	    
+	    println("Returning OK");
+	    return {};
 	 })
   });
   

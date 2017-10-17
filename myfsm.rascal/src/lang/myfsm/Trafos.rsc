@@ -2,7 +2,7 @@ module lang::myfsm::Trafos
 
 import lang::myfsm::MetaModel;
 import lang::ecore::Refs;
-import lang::ecore::Diff;
+import lang::ecore::diff::Diff;
 
 import List;
 import IO;
